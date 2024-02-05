@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+        <title>Title</title>
+    {% endblock title %}
+    {% block style %}
+        <link rel="stylesheet" style="{% static 'css/base.css' %}">
+    {% endblock style %}
+</head>
+<body>
+    <h1>Добро пожаловать в мир Гарри Поттера</h1>
+</body>
+</html>
