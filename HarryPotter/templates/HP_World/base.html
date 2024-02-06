@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     {% block title %}
-        <title>Title</title>
+        <title>Главная</title>
     {% endblock title %}
     {% block style %}
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock style %}
 </head>
+
 <body>
-    <h1>Добро пожаловать в мир Гарри Поттера</h1>
+
+    {% block nav %}
+        <div class="nav">
+            {% for i in pages %}
+                {% if i == 'Главная' %}
+                    <div><a href="{% url 'main' %}">{{ i }}</a></div>
+                {% elif i == "Энциклопедия" %}
+                    <div><a href="{% url 'grimoire' %}">{{ i }}</a></div>
+                {% elif i == "Магазин" %}
+                    <div><a href="{% url 'shop' %}">{{ i }}</a></div>
+                {% else %}
+                    <div><a href="{% url 'foundation' page=i %}">{{ i }}</a></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endblock nav %}
+
+<!--Все блоки выше будут повторяться на других страницах приложения-->
+
+<!--Все блоки ниже (кроме подвала) будут меняться на других страницах приложения-->
+
+    {% block cover %}
+        <div class="cover">
+            <div>Добро пожаловать в мир Гарри Поттера</div>
+        </div>
+    {% endblock cover %}
+
+    {% block content %}
+        <p>Описание мира ГП</p>
+        <p>Описание сайта</p>
+        <p>Какое влияние на мир и достижения</p>
+        <p>Почему мир ГП для всех, и приглашение в него</p>
+        <p>Подвал</p>
+    {% endblock content %}
 </body>
 </html>
