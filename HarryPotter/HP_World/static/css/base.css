@@ -1,5 +1,4 @@
-h1 {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: blanchedalmond;
-        background-color: brown;
+.nav {
+        display: flex;
+        justify-content: space-evenly;
 }
