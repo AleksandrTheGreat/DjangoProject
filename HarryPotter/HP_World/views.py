@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Book, Movie, Game
 
 # Create your views here.
 global pages
@@ -27,3 +28,15 @@ def grimoire(request):
 
 def shop(request):
     return HttpResponse('Shop')
+
+def book_list(request):
+    books = Book.objects.all()
+    return render(request, 'book_list.html', {'books': books})
+
+def movie_list(request):
+    movies = Movie.objects.all()
+    return render(request, 'movie_list.html', {'movies': movies})
+
+def game_list(request):
+    games = Game.objects.all()
+    return render(request, 'game_list.html', {'games': games})

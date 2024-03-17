@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1795a536-a36f-4274-acfe-8e57a0f21421" name="Changes" comment="Начало верстки и настройка base.html в HP_World">
-      <change afterPath="$PROJECT_DIR$/plan/Аргументы функции STRFTIME.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/Модификаторы функции STRFTIME.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/Операторы сравнения в SQLIite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/Подстановочные знаки для поиска по тексту.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/Срез через функцию SUBSTR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/Типы функций в SQLite.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="1795a536-a36f-4274-acfe-8e57a0f21421" name="Changes" comment="Начал делать модели">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HarryPotter/HP_World/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HarryPotter/HP_World/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HarryPotter/HP_World/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/HarryPotter/HP_World/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HarryPotter/HP_World/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HarryPotter/HP_World/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707502194232</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Начал делать модели">
+      <option name="closed" value="true" />
+      <created>1709984987532</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709984987532</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +205,7 @@
     <MESSAGE value="Подключение приложений к проекту, создание папок templates и static" />
     <MESSAGE value="Начало работы с HP_World" />
     <MESSAGE value="Начало верстки и настройка base.html в HP_World" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начало верстки и настройка base.html в HP_World" />
+    <MESSAGE value="Начал делать модели" />
+    <option name="LAST_COMMIT_MESSAGE" value="Начал делать модели" />
   </component>
 </project>
